@@ -1,0 +1,18 @@
+/* Reset básico para remover espaços brancos do navegador */
+html,
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to right, #000000, #000000);
+
+  background-size:
+    40px 40px,
+    40px 40px,
+    cover;
+  background-position: center; /* centraliza */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ajuda a manter o padding dentro da largura */
+  font-family: sans-serif;
+}

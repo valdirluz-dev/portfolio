@@ -1,0 +1,101 @@
+/* Imagem circular */
+.photo img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #089fe6;
+}
+
+.top-titles h1 {
+  font-size: 100px;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+  margin-left: 250px;
+}
+
+.tech-icons i {
+  font-size: 32px;
+  transition: transform 0.3s;
+}
+
+.tech-icons i.fa-html5 {
+  color: #e34f26;
+} /* HTML */
+.tech-icons i.fa-css3-alt {
+  color: #264de4;
+} /* CSS */
+.tech-icons i.fa-js {
+  color: #ffdd00;
+} /* JavaScript */
+.tech-icons i.fa-java {
+  color: #00ff22;
+} /* Java */
+
+.tech-icons i:hover {
+  color: #ffd700; /* cor ao passar o mouse */
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.spring img {
+  width: 280px; /* largura da imagem */
+  height: 280px; /* altura da imagem */
+  object-fit: cover; /* ajusta a imagem dentro do quadrado */
+  border-radius: 50%; /* deixa circular */
+  border: 10px solid #000000;
+}
+
+.information-box h1 {
+  color: white; /* mantém o texto visível */
+  margin-bottom: 20px; /* espaço entre o h1 e a lista */
+  margin-top: 0; /* opcional: remove espaço extra acima */
+  margin-left: 100;
+  font-size: 60px; /* tamanho do texto, se quiser aumentar */
+  padding-left: 80px;
+}
+
+.custom-list {
+  list-style: none; /* remove bullets padrão */
+  padding: 0px;
+  padding-right: 100px;
+  padding-left: 30px;
+  font-size: 30px;
+  color: beige;
+  white-space: nowrap; /* força o texto a ficar na mesma linha */
+}
+
+.custom-list li::before {
+  content: "⦿"; /* insere o bullet desejado */
+  margin-right: 10px; /* distância entre bullet e texto */
+  color: white; /* cor do bullet */
+}
+
+.contact-info {
+  display: flex; /* mantém na mesma linha */
+  justify-content: flex-start; /* itens colados à esquerda */
+  gap: 20px; /* espaço pequeno entre os itens */
+  flex-wrap: wrap; /* quebra linha se precisar */
+  color: white;
+  font-size: 16px;
+  margin-left: 250px;
+}
+
+.link {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #00ffffc0; /* muda cor ao passar o mouse, opcional */
+}
