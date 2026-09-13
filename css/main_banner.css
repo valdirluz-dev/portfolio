@@ -1,0 +1,28 @@
+main {
+  /* Calcula a altura mínima descontando os 10vh do topo */
+  min-height: calc(100vh - 10vh);
+
+  /* Empurra todo o conteúdo para baixo do header */
+  margin-top: 10vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Centraliza verticalmente o texto e a imagem */
+
+  padding: 0 5rem; /* Dá uma margem nas laterais para não colar no canto da tela */
+  background-color: rgb(0, 255, 255);
+  gap: 10vh;
+}
+
+.resumo {
+  padding-left: 5vw;
+}
+
+.resumo h1 {
+  font-size: 10vh;
+}
+
+.fullstack {
+  color: blue;
+}

@@ -1,167 +1,70 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>valdirluz-dev</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/component.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Portfólio Dev</title>
   </head>
-
   <body>
-    <header class="top-box">
-      <div class="photo">
-        <img src="images/profile-pic (2).png" alt="Galáxia" />
-      </div>
-      <div class="top-titles">
-        <h1>Valdir Luz</h1>
-        <div class="tech-icons">
-          <i class="fab fa-html5" title="HTML"></i>
-          <i class="fab fa-css3-alt" title="CSS"></i>
-          <i class="fab fa-js" title="JavaScript"></i>
-          <i class="fab fa-java" title="Java"></i>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="information-box">
-        <ul class="custom-list">
-          <li>React</li>
-          <li>Spring boot</li>
-          <li>Spring Security</li>
-          <li>JPA/hibernate</li>
-          <li>PostgreSQL</li>
+    <header>
+      <nav>
+        <a href="/" class="logo">Valdir_Luz</a>
+        <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Habilidades</a></li>
+          <li><a href="/">Projetos</a></li>
+          <li><a href="/">Experiência</a></li>
+          <li><a href="/">Contato</a></li>
         </ul>
 
-        <div class="spring">
-          <img src="images/react-1-logo-svgrepo-com.svg" alt="React" />
-          <img src="images/spring-boot-icon.svg" alt="Spring Boot" />
-        </div>
-      </section>
+        <div class="pai-trilho">
+          <div class="disponibilidade">
+            <ul>
+              <li>Disponível para oportunidades</li>
+            </ul>
+          </div>
 
-      <section class="gallery">
-        <!--CARD 1-->
-        <div class="item">
-          <div class="card">
-            <!-- Frente do cartão -->
-            <div class="front">
-              <img src="images/sistemafinanceiro.png" alt="Comming soon" />
-              <div class="description">
-                Sistema de Gestão Financeira Pessoal
-              </div>
-            </div>
-            <!-- Verso do cartão -->
-            <div class="back">
-              <img src="images/comingsoon.png" alt="Coming Soon" />
-              <div class="description">Em desenvolvimento</div>
+          <div class="trilho" id="trilho">
+            <div class="indicador">
+              <i class="fa-regular fa-moon"></i>
             </div>
           </div>
+          <!--esse PT é um botão que diz a linguagem do site, ao clicar ele muda o idioma do site e deixa a sigla no idioma que o site estiver após a mudança-->
+          <p>PT</p>
         </div>
+      </nav>
+    </header>
 
-        <!--CARD 2-->
-        <div class="item">
-          <div class="card">
-            <div class="front">
-              <img src="images/java.png" alt="Coming Soon" />
-              <div class="description">API REST de Biblioteca</div>
-            </div>
-            <div class="back">
-              <img src="images/comingsoon.png" alt="Coming Soon" />
-              <div class="description">Em desenvolvimento</div>
-            </div>
-          </div>
-        </div>
+    <main>
+      <div class="resumo">
+        <p class="fullstack">FULL STACK DEVELOPER</p>
+        <h1>Valdir Luz</h1>
+        <p>
+          Desenvolvedor fullstack focado em java/React | criando <br />soluções
+          web inovadoras
+        </p>
+        <button>Ver Projetos</button>
+        <button id="button1">Baixar CV</button>
+        <a href="/">Falar comigo</a>
+      </div>
 
-        <!--CARD 3-->
-        <div class="item">
-          <div class="card">
-            <div class="front">
-              <img src="images/java.png" alt="Coming Soon" />
-              <div class="description">Chat em Tempo Real</div>
-            </div>
-            <div class="back">
-              <img src="images/comingsoon.png" alt="Coming Soon" />
-              <div class="description">Em desenvolvimento</div>
-            </div>
-          </div>
-        </div>
+      <div class="imagem">
+        <img src="/" alt="imagem de perfil" />
+        <div class="image-background-projection"></div>
+      </div>
 
-        <!--CARD 4-->
-        <div class="item">
-          <div class="card">
-            <div class="front">
-              <img src="images/java.png" alt="Coming Soon" />
-              <div class="description">
-                Sistema de Agendamento (Consultas/Serviços)
-              </div>
-            </div>
-            <div class="back">
-              <img src="images/comingsoon.png" alt="Coming Soon" />
-              <div class="description">Em desenvolvimento</div>
-            </div>
-          </div>
-        </div>
-
-        <!--CARD 5-->
-        <div class="item">
-          <div class="card">
-            <div class="front">
-              <img src="images/java.png" alt="Coming Soon" />
-              <div class="description">E-commerce Simples</div>
-            </div>
-            <div class="back">
-              <img src="images/comingsoon.png" alt="Coming Soon" />
-              <div class="description">Em desenvolvimento</div>
-            </div>
-          </div>
-        </div>
-
-        <!--CARD 6-->
-        <div class="item">
-          <div class="card">
-            <div class="front">
-              <img src="images/java.png" alt="Comming soon" />
-              <div class="description">Jogo simples</div>
-            </div>
-            <div class="back">
-              <img src="images/comingsoon.png" alt="Coming Soon" />
-              <div class="description">Em desenvolvimento</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div></div>
     </main>
 
-    <footer>
-      <p>&copy; valdirluz-dev</p>
-      <p class="contact-info">
-        <span
-          >Contato:
-          <a href="tel:+5581992593116" class="link">(81) 99259-3116</a></span
-        >
-        <span
-          >LinkedIn:
-          <a href="https://www.linkedin.com/in/valdir-luz/" class="link"
-            >valdirluz-dev</a
-          ></span
-        >
-        <span
-          >Github:
-          <a href="https://github.com/valdirluz-dev" class="link"
-            >valdirluz-dev</a
-          ></span
-        >
-        <span
-          >Email:
-          <a href="mailto:valdirluz.dev@gmail.com" class="link"
-            >valdirluz.dev@gmail.com</a
-          ></span
-        >
-      </p>
-    </footer>
+    <section class="aboutme"></section>
+    <section class="skills-home"></section>
+    <section class="Contact"></section>
+    <footer></footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
