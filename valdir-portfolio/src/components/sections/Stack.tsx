@@ -57,6 +57,7 @@ function SkillCard({
       y,
       rotateX: -normalizedY * maxTilt,
       rotateY: normalizedX * maxTilt,
+      angle: 0,
       active: true,
     });
   }
@@ -67,6 +68,7 @@ function SkillCard({
       y: 50,
       rotateX: 0,
       rotateY: 0,
+      angle: 0,
       active: false,
     });
   }
