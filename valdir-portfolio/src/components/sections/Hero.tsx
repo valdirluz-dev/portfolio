@@ -76,7 +76,9 @@ export function Hero() {
             })}
 
             <a
-              href="#projects"
+              href="/documents/curriculo_valdir.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="gradient-button flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium">
               Currículo
               <ArrowUpRight size={16} />
@@ -99,8 +101,8 @@ export function Hero() {
             <div
               className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-neutral-900"
               style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80')",
+                backgroundImage: "url('/perfil.png')",
+                // "url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80')",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
               }}>
