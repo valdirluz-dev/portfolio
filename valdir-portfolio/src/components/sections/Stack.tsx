@@ -11,9 +11,12 @@ const technologies = [
   { name: "Spring Boot", logo: "springboot" },
   { name: "PostgreSQL", logo: "postgresql" },
   { name: "Flyway", logo: "flyway" },
-  { name: "Angular", logo: "angular" },
+  {
+    name: "Angular",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg",
+  },
   { name: "React", logo: "react" },
-  { name: "Next.js", logo: "nextdotjs" },
+  { name: "Next.js", logo: "/projects/nextjs.ico" },
   { name: "Typescript", logo: "typescript" },
   { name: "Git", logo: "git" },
   { name: "GitHub", logo: "github" },
@@ -130,12 +133,17 @@ function SkillCard({
           }}>
           <img
             src={
-              tech.logo.startsWith("https://")
+              tech.logo.startsWith("https://") || tech.logo.startsWith("/")
                 ? tech.logo
                 : `https://cdn.simpleicons.org/${tech.logo}`
             }
             alt={tech.name}
-            className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-110"
+            className={`h-full w-full object-contain transition-transform duration-300 group-hover:scale-110 ${
+              tech.name === "Next.js" ? "rounded-full ring-1 ring-white" : ""
+            }`}
+            style={{
+              filter: tech.name === "GitHub" ? "invert(1)" : undefined,
+            }}
             loading="lazy"
           />
         </div>

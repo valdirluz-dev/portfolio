@@ -33,7 +33,7 @@ export const projects: ProjectCardProps[] = [
     description:
       "Sistema voltado para uma organização de proteção animal, integrando aplicação web, API backend e banco de dados.",
     image: "/projects/ong-pet.png",
-    status: "Concluído",
+    status: "Em andamento",
     technologies: ["Next.js", "Spring Boot", "PostgreSQL", "Docker", "Flyway"],
   },
 ];

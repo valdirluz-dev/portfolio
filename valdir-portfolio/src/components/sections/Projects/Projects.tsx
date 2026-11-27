@@ -7,7 +7,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export function Projects() {
   return (
-    <section id="projects" className="container section-padding">
+    <section id="projects" className="container section-padding !pt-5 md:!pt-0">
       <div className="space-y-12">
         {/* Cabeçalho */}
         <motion.div
