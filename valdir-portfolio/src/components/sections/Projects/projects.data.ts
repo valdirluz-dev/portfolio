@@ -13,7 +13,7 @@ export const projects: ProjectCardProps[] = [
   {
     title: "FrotaSync",
     description:
-      "Plataforma de gerenciamento de frotas com arquitetura moderna, integração entre frontend e backend e banco de dados relacional.",
+      "Plataforma de gerenciamento de frotas com arquitetura moderna, integração entre frontend, backend e banco de dados relacional.",
     image: "/projects/frotasync.png",
     status: "Em andamento",
     technologies: ["Next.js", "NestJS", "PostgreSQL", "Tailwind", "Flyway"],
@@ -29,11 +29,11 @@ export const projects: ProjectCardProps[] = [
     githubUrl: "https://github.com/valdirluz-dev/minhas-notas",
   },
   {
-    title: "Projeto ONG PET",
+    title: "ONG PET",
     description:
       "Sistema voltado para uma organização de proteção animal, integrando aplicação web, API backend e banco de dados.",
     image: "/projects/ong-pet.png",
     status: "Em andamento",
-    technologies: ["Next.js", "Spring Boot", "PostgreSQL", "Docker", "Flyway"],
+    technologies: ["Next.js", "Spring Boot", "SQLite", "Docker", "Flyway"],
   },
 ];

@@ -40,7 +40,8 @@ export function Navbar() {
 
         {/* CTA Desktop */}
         <a
-          href="#contact"
+          href="https://wa.me/558196193406"
+          target="_blank"
           className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-purple-500 px-5 py-2.5 text-sm font-medium text-white transition-transform hover:scale-105 md:flex">
           Let's Talk
           <ArrowUpRight size={16} />

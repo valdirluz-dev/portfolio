@@ -16,7 +16,7 @@ export function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center">
-          <span className="font-mono text-sm gradient-text">03 / PROJECTS</span>
+          <span className="font-mono text-sm gradient-text">PROJECTS</span>
 
           <h2 className="mt-5 text-3xl font-semibold tracking-tight md:text-5xl">
             Featured <span className="gradient-text">Projects</span>

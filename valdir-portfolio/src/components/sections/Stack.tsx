@@ -172,12 +172,12 @@ export function Stack() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center">
-          <span className="font-mono text-sm gradient-text">
+          <span className="mb-4 inline-block text-sm font-medium uppercase tracking-[0.3em] gradient-text">
             02 / TECHNOLOGY STACK
           </span>
 
           <h2 className="mt-5 text-3xl font-semibold tracking-tight md:text-5xl">
-            My <span className="gradient-text">Skills</span>
+            Tech <span className="gradient-text">Skills</span>
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-[var(--text-muted)] md:text-lg">

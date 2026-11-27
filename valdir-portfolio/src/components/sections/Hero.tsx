@@ -78,7 +78,7 @@ export function Hero() {
             <a
               href="#projects"
               className="gradient-button flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium">
-              Projetos
+              Currículo
               <ArrowUpRight size={16} />
             </a>
           </div>
