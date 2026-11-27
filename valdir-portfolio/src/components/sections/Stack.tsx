@@ -4,25 +4,31 @@ import { useState } from "react";
 import { motion } from "motion/react";
 
 const technologies = [
-  { name: "Java", logo: "java" },
+  {
+    name: "Java",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+  },
   { name: "Spring Boot", logo: "springboot" },
   { name: "PostgreSQL", logo: "postgresql" },
+  { name: "Flyway", logo: "flyway" },
   { name: "Angular", logo: "angular" },
   { name: "React", logo: "react" },
   { name: "Next.js", logo: "nextdotjs" },
-  { name: "TypeScript", logo: "typescript" },
-  { name: "Docker", logo: "docker" },
-  { name: "Kubernetes", logo: "kubernetes" },
-  { name: "AWS", logo: "amazonaws" },
-  { name: "Google Cloud", logo: "googlecloud" },
-  { name: "Terraform", logo: "terraform" },
+  { name: "Typescript", logo: "typescript" },
   { name: "Git", logo: "git" },
   { name: "GitHub", logo: "github" },
+  { name: "Docker", logo: "docker" },
+  { name: "Kubernetes", logo: "kubernetes" },
+  {
+    name: "AWS",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original.svg",
+  },
+  { name: "Google Cloud", logo: "googlecloud" },
+  { name: "Terraform", logo: "terraform" },
+  { name: "GitHub Actions", logo: "githubactions" },
   { name: "Prometheus", logo: "prometheus" },
   { name: "Grafana", logo: "grafana" },
   { name: "OpenTelemetry", logo: "opentelemetry" },
-  { name: "GitHub Actions", logo: "githubactions" },
-  { name: "Flyway", logo: "flyway" },
 ];
 
 function SkillCard({
@@ -50,7 +56,7 @@ function SkillCard({
     const normalizedX = (x - 50) / 50;
     const normalizedY = (y - 50) / 50;
 
-    const maxTilt = 100;
+    const maxTilt = 1000;
 
     setMouse({
       x,
@@ -79,7 +85,7 @@ function SkillCard({
       onMouseLeave={handleMouseLeave}
       className="relative h-full"
       style={{
-        perspective: "100px",
+        perspective: "-1000px",
       }}>
       <motion.div
         initial={{ opacity: 0, y: 24, scale: 0.96 }}
@@ -123,7 +129,11 @@ function SkillCard({
             transform: "translateZ(35px)",
           }}>
           <img
-            src={`https://cdn.simpleicons.org/${tech.logo}`}
+            src={
+              tech.logo.startsWith("https://")
+                ? tech.logo
+                : `https://cdn.simpleicons.org/${tech.logo}`
+            }
             alt={tech.name}
             className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-110"
             loading="lazy"
